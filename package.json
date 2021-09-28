@@ -17,8 +17,11 @@
         "postcss": "^8.1.14"
     },
     "dependencies": {
+        "bufferutil": "^4.0.4",
         "express": "^4.17.1",
         "install": "^0.13.0",
-        "socket.io": "^4.2.0"
+        "socket.io": "^4.2.0",
+        "utf-8-validate": "^5.0.6",
+        "ws": "^8.2.2"
     }
 }
