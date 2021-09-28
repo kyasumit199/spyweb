@@ -76,16 +76,16 @@
                 let socket = io(ip_address + ':' + socket_port);
 
                 let chatInput = $('#chatInput');
-//
-//                chatInput.keypress(function(e) {
-//                    let message = $(this).html();
-//                    console.log(message);
-//                    if(e.which === 13 && !e.shiftKey) {
-//                        socket.emit('sendChatToServer', message);
-//                        chatInput.html('');
-//                        return false;
-//                    }
-//                });
+
+               chatInput.keypress(function(e) {
+                   let message = $(this).html();
+                   console.log(message);
+                   if(e.which === 13 && !e.shiftKey) {
+                       socket.emit('sendChatToServer', message);
+                       chatInput.html('');
+                       return false;
+                   }
+               });
 
                 socket.on('sendChatToClient', (message) => {
                     $('.chat-content ul').append(`<li>${message}</li>`);
