@@ -71,8 +71,8 @@
 
         <script>
             $(function() {
-                let ip_address = '127.0.0.1';
-                let socket_port = '3000';
+                let ip_address = '192.168.1.43';
+                let socket_port = '8080';
                 let socket = io(ip_address + ':' + socket_port);
 
                 let chatInput = $('#chatInput');
