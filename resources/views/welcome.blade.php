@@ -71,7 +71,7 @@
 
         <script>
             $(function() {
-                let ip_address = '127.0.0.1';
+                let ip_address = '::';
                 let socket_port = '3000';
                 let socket = io(ip_address + ':' + socket_port);
 
